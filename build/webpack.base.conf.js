@@ -12,9 +12,9 @@ module.exports = {
     app: './src/entry.js'
   },
   output: {
-    path: config.build.assetsRoot,
+    path: config.build.assetsRoot,// 编译输出的静态资源根路径
     filename: '[name].js',
-    publicPath: process.env.NODE_ENV === 'production'
+    publicPath: process.env.NODE_ENV === 'production'// 正式发布环境下编译输出的上线路径的根路径
       ? config.build.assetsPublicPath
       : config.dev.assetsPublicPath
   },

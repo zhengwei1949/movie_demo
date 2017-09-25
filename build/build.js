@@ -3,7 +3,7 @@ require('./check-versions')()
 process.env.NODE_ENV = 'production'
 
 var fs = require('fs')
-var ora = require('ora')
+var ora = require('ora') // 一个很好看的 loading 插件
 var rm = require('rimraf')
 var path = require('path')
 var chalk = require('chalk')
